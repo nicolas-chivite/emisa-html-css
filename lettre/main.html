@@ -3,30 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nicolas Chivité" />
     <link rel="stylesheet" href="main.css" />
     <title>Lettre à mettre en page</title>
   </head>
+  
   <body>
-    <div class="sender-column">
+    
+    <address class="sender-column">
       <b>Dr. Eleanor Gaye</b>
       <br />Awesome Science faculty <br />University of Awesome <br />Bobtown,
       CA 99999, <br />USA <br /><b>Tel</b>: 123-456-7890 <br /><b>Email</b>:
       no_reply@example.com
-    </div>
+    </address>
 
-    <p align="right">20 January 2016</p>
+    <p align="right"><time datetime="2016-01-20">20 January 2016</time</p>
 
-    <div class="receiver-column">
+    <address>
       <b>Miss Eileen Dover</b>
-      <br />4321 Cliff Top Edge <br />Dover, CT9 XXX <br />UK
-    </div>
+      <br>4321 Cliff Top Edge <br/> Dover, CT9 XXX <br/> UK
+    </address>
 
     <h1>Re: Eileen Dover university application</h1>
 
     <p>Dear Eileen,</p>
     <p>
       Thank you for your recent application to join us at the University of
-      Awesome's science faculty to study as part of your <u>PhD</u> next year. I
+      Awesome's science faculty to study as part of your <abbr title="Philosophiæ doctor">PhD</abbr> next year. I
       will answer your questions one by one, in the following sections.
     </p>
 
@@ -37,9 +40,9 @@
       semester; the start dates for each one are as follows:
     </p>
     <ul>
-      <li>First semester: 9 September 2016</li>
-      <li>Second semester: 15 January 2017</li>
-      <li>Third semester: 2 May 2017</li>
+      <li>First semester: <time datetime="2016-09-09">9 September 2016</time></li>
+      <li>Second semester: <time datetime="2017-01-15">15 January 2017</time></li>
+      <li>Third semester: <time datetime="2017-05-02">2 May 2017</time></li>
     </ul>
 
     <p>
@@ -48,7 +51,7 @@
     </p>
     <p>
       You can find more information about
-      <a href="https://www.emisa.fr/">important university dates</a> on our
+      <a href="http://example.com">important university dates</a> on our
       website.
     </p>
 
@@ -64,7 +67,7 @@
 
     <ol>
       <li>
-        Turning H2O into wine, and the health benefits of Resveratrol
+        Turning H<sub>2</sub>O into wine, and the health benefits of Resveratrol
         (C<sub>14</sub>H<sub>12</sub>O<sub>3</sub>.)
       </li>
       <li>
@@ -73,7 +76,7 @@
         (effect of 3 × 10<sup>3</sup> increasing to 3 × 10<sup>4</sup>.)
       </li>
       <li>
-        <u>HTML</u> and <u>CSS</u> constructs for representing musical scores.
+        <abbr title="Hypertext Markeup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> constructs for representing musical scores.
       </li>
     </ol>
 
@@ -92,7 +95,7 @@
     </p>
         <dl>
             <dt>Polynesian chicken dance</dt>
-                <dd>A little known but very influential dance dating back as far as 300BC, a
+                <dd>A little known but very influential dance dating back as far as 300<abbr title="Before Christ">BC</abbr>, a
                 whole village would dance around in a circle like chickens, to encourage
                 their livestock to be "fruitful".</dd>
 
@@ -114,7 +117,7 @@
 
     <p>
       For more of my research, see my
-      <a href="https://www.emisa.fr/">exotic dance research page</a>.
+      <a href="http://example.com">exotic dance research page</a>.
     </p>
 
     <p>Yours sincerely,</p>
@@ -122,7 +125,7 @@
 
     <p>
       University of Awesome motto: "Be awesome to each other." --
-      <i>The memoirs of Bill S Preston, Esq</i>
+      <i>The memoirs of Bill S Preston, <abbr title="Esquire 07 69 42 47 77">Esq</abbr></i>
     </p>
   </body>
 </html>
