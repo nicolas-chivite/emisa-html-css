@@ -1,5 +1,12 @@
+body{
+    background: url(img/neko.gif);
+    background-position: center;
+}
 .text {
+    font-size: larger;
     font-weight: bolder;
+    color: white;
+    background-color: black;
 }
 
 .range {
