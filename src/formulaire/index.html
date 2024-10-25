@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="page-de-traitement">
+      <div class="field">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="user-name" required />
+      </div>
+      <div class="field">
+        <label for="firstname">Prénom :</label>
+        <input type="text" id="firstname" name="user-firstname" />
+      </div>
+
+      <div class="field">
+        <label for="mail">E-mail :</label>
+        <input type="text" id="mail" name="user-mail" required />
+      </div>
+
+      <div class="field">
+        <label for="message">Votre message :</label>
+        <textarea name="user-message" id="message"></textarea>
+      </div>
+
+        <fieldset>
+          <legend>Votre animal préféré :</legend>
+            <div>
+                <input type="radio" id="chat" name="choice" value="chat"/>
+                <label for="chat">Chat</label> 
+            </div>
+            <div>
+                <input type="radio" id="chien" name="choice" value="chien" />
+                <label for="chien">Chien</label>
+            </div>
+            <div>
+                <input type="radio" id="lapin" name="choice" value="lapin" />
+                <label for="lapin">Lapin</label>
+            </div>
+        </fieldset>
+
+      <div>
+        <input type="submit" name="tamere" id="bisous" value="Envoyer le formulaire">
+      </div>
+    
+    </form>
+  </body>
+</html>

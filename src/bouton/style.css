@@ -19,7 +19,7 @@ html {
   border-radius: 20px;
   background-image: linear-gradient(
     to bottom right,
-    transparent 30%,
+    tdansparent 30%,
     rgb(0, 0, 0, 0.2));
   box-shadow: 
     inset 3px 3px 0.2em rgba(255, 255, 255, 0.5),

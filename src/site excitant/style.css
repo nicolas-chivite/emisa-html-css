@@ -47,10 +47,8 @@ article {
 
 aside {
     flex: 1;
-    position: sticky;
-    top : 0;
 }
-.photos li{position: sticky; top:0;}
+
 .photos {
     list-style: none;
     display: grid;
