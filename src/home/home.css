@@ -1,0 +1,151 @@
+* {
+    font-family: "Montserrat", serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.logo-menu {
+    margin: auto;
+}
+
+.menu {
+    color: #025194;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1.8rem;
+}
+
+.network {
+    margin: auto;
+    margin-left: 50px;
+    padding: 0.5rem;
+    & div > a {
+        text-decoration: none;
+    }
+    & div a:visited {
+        color: #025194;
+    }
+    & div a:link {
+        color: #025194;
+    }
+}
+
+.network img {
+    margin: 0.3rem;
+}
+
+.banner {
+    background-image: url(../../assets/images/bandeau-home.png);
+    width: 100%;
+    height: 562px;
+}
+
+.banner div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40%;
+    padding-top: 5%;
+}
+
+h1 {
+    font-size: 80px;
+    color: #025194;
+    margin: 0;
+    font-weight: 800;
+}
+
+.banner h2 {
+    font-size: 50px;
+    color: #025194;
+    margin: 0;
+}
+
+#description {
+    font-size: 25px;
+    color: #025194;
+    font-weight: bold;
+    margin: 0;
+}
+
+#baseline {
+    margin-top: 6%;
+    font-weight: 800;
+}
+
+#baseline span {
+    color: #fff;
+    background-color: #1C9CDA;
+    width: 0.8rem;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 65%;
+    align-items: normal;
+    margin: 2% auto;
+
+    & h2 {
+        text-align: center;
+        color: #025194;
+        font-weight: 500;
+    }
+
+    & p {
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    & button {
+        font-size: 22px;
+        font-weight: 800;
+        background-color: #025194;
+        color: #fff;
+        padding: 1rem;
+        border: #025194;
+        border-radius: 1.9rem;
+        width: 20rem;
+        height: 4rem;
+        margin: 0 auto;
+        margin-top: 0px;
+        margin-top: 5%;
+    }
+
+    & img {
+        width: 10rem;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 3%;
+    }
+
+    ;
+
+    & div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+footer {
+    background-color: #1C9CDA;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-footer {
+    align-content: center;
+    & a {
+        text-decoration: none;
+    }
+    & a:visited {
+        color: #fff;
+    }
+    & a:link {
+        color: #fff;
+    }
+}

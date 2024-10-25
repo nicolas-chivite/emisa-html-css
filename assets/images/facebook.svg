@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.592" height="26.618" viewBox="0 0 26.592 26.618">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_254" data-name="Rectangle 254" width="26.592" height="26.618" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="facebook" transform="translate(-1539.791 -96.382)">
+    <g id="Groupe_14" data-name="Groupe 14" transform="translate(1539.791 96.382)">
+      <g id="Groupe_13" data-name="Groupe 13" clip-path="url(#clip-path)">
+        <rect id="Rectangle_253" data-name="Rectangle 253" width="26.592" height="26.618" rx="13.296" transform="translate(0 0)" fill="#025194"/>
+        <path id="Tracé_16" data-name="Tracé 16" d="M61.061,41.65a.171.171,0,0,0,.171-.171v0q-.035-1.618.045-2.99a3.949,3.949,0,0,1,4.415-3.8q1.2.061,2.391.187a.075.075,0,0,1,.075.083v2.623a.093.093,0,0,1-.093.093h-.011c-.992-.125-2.594-.215-3.065.8a9.6,9.6,0,0,0-.163,3.062.134.134,0,0,0,.153.151l2.962-.039q.087,0,.073.085l-.495,3.222a.084.084,0,0,1-.095.08l-2.447-.047a.149.149,0,0,0-.153.145v8.156a.067.067,0,0,1-.067.067H61.3a.054.054,0,0,1-.061-.061l-.049-8.206a.057.057,0,0,0-.064-.064H58.242a.093.093,0,0,1-.092-.093h0l.045-3.189a.074.074,0,0,1,.083-.083Z" transform="translate(-50.398 -30.054)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
