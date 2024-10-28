@@ -2,6 +2,7 @@
     font-family: "Montserrat", serif;
 }
 
+/* CSS DU HEADER DE NAVIGATION */
 #header {
     display: flex;
     align-items: center;
@@ -12,32 +13,45 @@
     margin: auto;
 }
 
+span.underline {
+    border-bottom: 5px solid #025194;
+}
+span.underline:hover {
+    border-bottom-color: #1C9CDA;
+}
+
 .menu {
     color: #025194;
     font-size: 25px;
     font-weight: bold;
     margin: 1.8rem;
+
+    & a:visited {
+        color: #025194;
+    }
+    & a:link {
+        color: #025194;
+    }
+    & a {
+        text-decoration: none;
+    }
+    & a:hover {
+        color: #1C9CDA;
+    }
 }
 
 .network {
     margin: auto;
     margin-left: 50px;
     padding: 0.5rem;
-    & div > a {
-        text-decoration: none;
-    }
-    & div a:visited {
-        color: #025194;
-    }
-    & div a:link {
-        color: #025194;
-    }
 }
 
 .network img {
     margin: 0.3rem;
 }
+/* FIN CSS DU HEADER DE NAVIGATION */
 
+/* CSS DE LA BANNIERE */
 .banner {
     background-image: url(../../assets/images/bandeau-home.png);
     width: 100%;
@@ -63,6 +77,7 @@ h1 {
     color: #025194;
     margin: 0;
 }
+/* FIN CSS DE LA BANNIERE */
 
 #description {
     font-size: 25px;
@@ -93,7 +108,7 @@ h1 {
     & h2 {
         text-align: center;
         color: #025194;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     & p {
@@ -107,19 +122,29 @@ h1 {
         background-color: #025194;
         color: #fff;
         padding: 1rem;
-        border: #025194;
         border-radius: 1.9rem;
+        border: none;
         width: 20rem;
         height: 4rem;
         margin: 0 auto;
         margin-top: 0px;
         margin-top: 5%;
+
+        & a {
+            text-decoration: none;
+        }
+        & a:visited {
+            color: #fff;
+        }
+        & a:link {
+            color: #fff;
+        }
     }
 
     & img {
         width: 10rem;
         position: absolute;
-        margin-top: 10%;
+        margin-top: 14%;
         margin-left: 3%;
     }
 
@@ -131,14 +156,25 @@ h1 {
     }
 }
 
+/* CSS DU FOOTER */
 footer {
     background-color: #1C9CDA;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
+    height: 58px;
+    margin-top: 7%;
+}
+
+#logo-footer {
+    padding: 0.4rem;
+    margin-left: 17%;
+    margin-right: 2%;
 }
 
 .menu-footer {
     align-content: center;
+    color: white;
+    margin: 0.5rem;
     & a {
         text-decoration: none;
     }
@@ -149,3 +185,4 @@ footer {
         color: #fff;
     }
 }
+/* FIN DU CSS DU FOOTER */

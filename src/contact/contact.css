@@ -1,0 +1,79 @@
+* {
+    font-family: "Montserrat", serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.logo-menu {
+    margin: auto;
+}
+
+span.underline {
+    border-bottom: 5px solid #025194;
+}
+span.underline:hover {
+    border-bottom-color: #1C9CDA;
+}
+
+.menu {
+    color: #025194;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1.8rem;
+
+    & a:visited {
+        color: #025194;
+    }
+    & a:link {
+        color: #025194;
+    }
+    & a {
+        text-decoration: none;
+    }
+    & a:hover {
+        color: #1C9CDA;
+    }
+}
+
+.network {
+    margin: auto;
+    margin-left: 50px;
+    padding: 0.5rem;
+}
+
+.network img {
+    margin: 0.3rem;
+}
+
+footer {
+    background-color: #1C9CDA;
+    display: flex;
+    justify-content: start;
+    height: 58px;
+    margin-top: 7%;
+}
+
+#logo-footer {
+    padding: 0.4rem;
+    margin-left: 17%;
+    margin-right: 2%;
+}
+
+.menu-footer {
+    align-content: center;
+    color: white;
+    margin: 0.5rem;
+    & a {
+        text-decoration: none;
+    }
+    & a:visited {
+        color: #fff;
+    }
+    & a:link {
+        color: #fff;
+    }
+}

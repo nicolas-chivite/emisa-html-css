@@ -1,0 +1,246 @@
+* {
+    font-family: "Montserrat", serif;
+}
+
+/* CSS DU HEADER DE NAVIGATION */
+#header {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.logo-menu {
+    margin: auto;
+}
+
+span.underline {
+    border-bottom: 5px solid #025194;
+}
+span.underline:hover {
+    border-bottom-color: #1C9CDA;
+}
+
+.menu {
+    color: #025194;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1.8rem;
+
+    & a:visited {
+        color: #025194;
+    }
+    & a:link {
+        color: #025194;
+    }
+    & a {
+        text-decoration: none;
+    }
+    & a:hover {
+        color: #1C9CDA;
+    }
+}
+
+.network {
+    margin: auto;
+    margin-left: 50px;
+    padding: 0.5rem;
+}
+
+.network img {
+    margin: 0.3rem;
+}
+/* FIN CSS DU HEADER DE NAVIGATION */
+
+/* CSS DE LA BANNIERE */
+.banner {
+    background-image: url(../../assets/images/bandeau-annuaire.png);
+    width: 100%;
+    height: 562px;
+}
+
+.banner div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-top: 8%;
+}
+
+h1 {
+    font-size: 80px;
+    color: #fff;
+    margin: 0;
+    font-weight: 800;
+}
+
+.banner h2 {
+    font-size: 50px;
+    color: #fff;
+    margin: 0;
+}
+/* FIN CSS DE LA BANNIERE */
+
+.stud-pic{
+    position: relative;
+    top: -1px;
+    right: 7px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    align-items: normal;
+    margin: 2% auto;
+
+    & h2 {
+    color: #025194;
+    font-weight: 800;
+    }
+
+    & button{
+        background-color: #025194;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        border-radius: 1.9rem;
+        border: none;
+        width: 15rem;
+        height: 4rem;
+    }
+
+    & #course-select, #year-select{
+        appearance: none;
+        background: url(../../assets/images/arrow-searc-button.svg) no-repeat right #1C9CDA;
+        background-position: 90%;
+        box-shadow: #00000071 1px 1px 10px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        border-radius: 1.9rem;
+        border: none;
+        width: fit-content;
+        min-width: 15rem;
+        height: 4rem;
+    }
+
+    & #year-select{
+        margin: auto 1.5rem;
+    }
+}
+
+.student {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    max-width: 70%;
+    margin: 2% auto;
+}
+
+.stud-sheet{
+    display: flex;
+    position : relative;
+    width: 625px;
+    height: 150px;
+    border-radius: 25px 25px 25px 0px;
+    border-color: #025194;
+    box-shadow: #00000071 1px 1px 6px;
+}
+
+.stud-card{
+    flex-direction: column;
+}
+
+.id {
+    & #stud-id{
+        font-size: 25px;
+        font-weight: 700;
+
+        & img {
+            justify-content: space-evenly;
+            width: 39px;
+            height: 27px;
+        }
+    }
+    & .year-type {
+        font-weight: 700;
+    }
+}    
+
+.heart {
+    position: absolute;
+    width: 24px;
+    right: 18px;
+    top: 14px;
+}
+
+.btn-stud button{
+    /* background-color: #025194; */
+    background :url(../../assets/images/picto-fiche.svg) no-repeat right #025194;
+    background-position: 90%;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 35px;
+    color: #fff;
+    width: 222px;
+    height: 43px;
+    position: absolute;
+    left: 403px;
+    top: 108px;
+    border-radius: 11px 0px 27px 0px;
+    border: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 50%;
+    margin: 0 auto;
+
+    & div {
+        background-color: #474747;
+        color: #fff;
+        border-radius: 2px;
+        width: 55px;
+        height: 45px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        align-content: center;
+        border-radius: 10px;
+    }
+}
+
+/* CSS DU FOOTER */
+footer {
+    background-color: #1C9CDA;
+    display: flex;
+    justify-content: start;
+    height: 58px;
+    margin-top: 7%;
+}
+
+#logo-footer {
+    padding: 0.4rem;
+    margin-left: 17%;
+    margin-right: 2%;
+}
+
+.menu-footer {
+    align-content: center;
+    color: white;
+    margin: 0.5rem;
+    & a {
+        text-decoration: none;
+    }
+    & a:visited {
+        color: #fff;
+    }
+    & a:link {
+        color: #fff;
+    }
+}
+/* FIN DU CSS DU FOOTER */
