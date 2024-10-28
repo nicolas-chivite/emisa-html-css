@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="163" height="167" viewBox="0 0 163 167">
+  <defs>
+    <filter id="Vue-densemble-de-la-facade-est-du-bloc-public-depuis-JE-scaled-e1713796537948" x="0" y="0" width="163" height="167" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_274" data-name="Rectangle 274" width="143.039" height="124.138" fill="#1c9cda"/>
+    </clipPath>
+  </defs>
+  <g id="avatar-homme" transform="translate(-271 -1102)">
+    <g transform="matrix(1, 0, 0, 1, 271, 1102)" filter="url(#Vue-densemble-de-la-facade-est-du-bloc-public-depuis-JE-scaled-e1713796537948)">
+      <path id="Vue-densemble-de-la-facade-est-du-bloc-public-depuis-JE-scaled-e1713796537948-2" data-name="Vue-densemble-de-la-facade-est-du-bloc-public-depuis-JE-scaled-e1713796537948" d="M26,0H145a0,0,0,0,1,0,0V149a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V26A26,26,0,0,1,26,0Z" transform="translate(7 1)" fill="rgba(28,156,218,0.2)"/>
+    </g>
+    <g id="Groupe_231" data-name="Groupe 231" transform="translate(278.961 1126.862)">
+      <g id="Groupe_186" data-name="Groupe 186" clip-path="url(#clip-path)">
+        <path id="Tracé_54" data-name="Tracé 54" d="M143.039,124.138H0s4.636-14.221,7.1-17.022c3.161-3.591,7.968-5.146,12.536-6.551Q36.163,95.482,52.689,90.4a44.305,44.305,0,0,0,2.388-13.258,31.507,31.507,0,0,1-5.553-8.5,30.486,30.486,0,0,1-2.089-10.923,2.274,2.274,0,0,1-2.367,1.036,3.516,3.516,0,0,1-2.322-1.886,9.353,9.353,0,0,1-.847-2.965,59.6,59.6,0,0,1-.748-10.75c.031-1.534.364-3.408,1.81-3.9a2.538,2.538,0,0,1,2.053.3,172.557,172.557,0,0,1,.047-18.732c.182-3.688.49-7.51,2.3-10.725a16.035,16.035,0,0,1,7.592-6.588,38.407,38.407,0,0,1,5.165-1.812,45.478,45.478,0,0,1,25.511.266,38.258,38.258,0,0,1,4.194,1.545,16.021,16.021,0,0,1,7.59,6.588c1.808,3.215,2.118,7.037,2.3,10.725a172.553,172.553,0,0,1,.047,18.732,2.535,2.535,0,0,1,2.051-.3c1.448.494,1.781,2.368,1.812,3.9a59.6,59.6,0,0,1-.748,10.75,9.353,9.353,0,0,1-.847,2.965A3.525,3.525,0,0,1,99.7,58.758a2.277,2.277,0,0,1-2.368-1.036,30.477,30.477,0,0,1-2.087,10.923,31.471,31.471,0,0,1-5.555,8.5A44.367,44.367,0,0,0,92.081,90.4q16.528,5.086,33.056,10.165c4.566,1.406,9.375,2.961,12.536,6.551,2.463,2.8,5.366,17.022,5.366,17.022" transform="translate(0 0)" fill="#1c9cda"/>
+      </g>
+    </g>
+  </g>
+</svg>

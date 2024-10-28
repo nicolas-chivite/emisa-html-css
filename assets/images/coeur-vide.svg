@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.203" height="34.985" viewBox="0 0 38.203 34.985">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_301" data-name="Rectangle 301" width="38.203" height="34.985" fill="#025194"/>
+    </clipPath>
+  </defs>
+  <g id="coeur-vide" transform="translate(0 0)">
+    <g id="Groupe_256" data-name="Groupe 256" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Tracé_61" data-name="Tracé 61" d="M9.964,0A9.62,9.62,0,0,0,2.9,3.117a11.086,11.086,0,0,0,0,14.955l15.42,16.58a1.061,1.061,0,0,0,1.5.042l.041-.042Q27.581,26.368,35.3,18.089a11.081,11.081,0,0,0,0-14.955,9.562,9.562,0,0,0-14.126,0L19.1,5.355,17.028,3.117A9.62,9.62,0,0,0,9.964,0m0,2.072a7.492,7.492,0,0,1,5.5,2.487l2.868,3.068a1.061,1.061,0,0,0,1.5.041q.021-.02.041-.041l2.852-3.034a7.342,7.342,0,0,1,11.026,0,8.982,8.982,0,0,1,0,12.054L19.1,32.381,4.443,16.613a8.982,8.982,0,0,1,0-12.054A7.525,7.525,0,0,1,9.964,2.072Z" transform="translate(0 0)" fill="#025194"/>
+    </g>
+  </g>
+</svg>
