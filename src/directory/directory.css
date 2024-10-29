@@ -197,20 +197,29 @@ h1 {
 .nav{
     display: flex;
     justify-content: space-evenly;
-    max-width: 50%;
+    max-width: 20%;
     margin: 0 auto;
 
     & div {
-        background-color: #474747;
+        background-color: #1C9CDA;
+        font-size: 22px;
         color: #fff;
         border-radius: 2px;
         width: 55px;
         height: 45px;
         text-align: center;
-        font-size: 22px;
-        font-weight: 700;
+        font-weight: 500;
         align-content: center;
         border-radius: 10px;
+    }
+
+    & img {
+        background-color: #00000030;
+        width: 29px;
+        height: 27px;
+        align-content: center;
+        border-radius: 10px;
+        padding: 9px;
     }
 }
 
@@ -220,7 +229,7 @@ footer {
     display: flex;
     justify-content: start;
     height: 58px;
-    margin-top: 7%;
+    margin-top: 40px;
 }
 
 #logo-footer {

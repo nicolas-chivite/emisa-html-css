@@ -44,11 +44,12 @@ span.underline:hover {
     margin: auto;
     margin-left: 50px;
     padding: 0.5rem;
+
+    & img{
+        margin: 0.3rem;
+    }
 }
 
-.network img {
-    margin: 0.3rem;
-}
 /* FIN CSS DU HEADER DE NAVIGATION */
 
 /* CSS DE LA BANNIERE */
@@ -56,13 +57,13 @@ span.underline:hover {
     background-image: url(../../assets/images/bandeau-home.png);
     width: 100%;
     height: 562px;
-}
-
-.banner div {
-    display: flex;
-    flex-direction: column;
-    padding-left: 40%;
-    padding-top: 5%;
+    
+    & div {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40%;
+        padding-top: 5%;
+    }
 }
 
 h1 {
@@ -99,16 +100,17 @@ h1 {
 
 .presentation {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     max-width: 65%;
-    align-items: normal;
+    height: 420px;
+    align-items: center;
     margin: 2% auto;
 
     & h2 {
         text-align: center;
         color: #025194;
-        font-weight: 700;
+        font-size: 40px;
+        font-weight: 500;
     }
 
     & p {
@@ -124,11 +126,8 @@ h1 {
         padding: 1rem;
         border-radius: 1.9rem;
         border: none;
-        width: 20rem;
-        height: 4rem;
-        margin: 0 auto;
-        margin-top: 0px;
-        margin-top: 5%;
+        margin-top: 93px;
+        position: relative;
 
         & a {
             text-decoration: none;
@@ -143,12 +142,10 @@ h1 {
 
     & img {
         width: 10rem;
-        position: absolute;
-        margin-top: 14%;
-        margin-left: 3%;
+        position: relative;
+        top: -98px;
+        right: 431px;
     }
-
-    ;
 
     & div {
         display: flex;
@@ -162,7 +159,6 @@ footer {
     display: flex;
     justify-content: start;
     height: 58px;
-    margin-top: 7%;
 }
 
 #logo-footer {

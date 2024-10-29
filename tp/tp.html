@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="tp.css">
+
+    <title>TP HTML/CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="instructions">
+        <h1 id="top">Travaux Pratiques HTML / CSS</h1>
+
+        <h2>Consignes</h2>
+
+        <p>Le but de l'exercice est de reproduire cette même page en utilisant le langage HTML et le langage CSS.
+            Ces exercices n'auront pas d'impact sur l'obtention ou non du diplôme. En revanche, une note vous sera
+            tout de même attribuée, afin d'évaluer votre niveau de compréhension des différentes notions abordées.
+            <br>Le barème est donc le suivant :
+        </p>
+
+        <ul>
+            <li>1 point pour la mise en forme du titre (police <i>Roboto</i>) et des consignes</li>
+            <li>1 point pour chaque exercice</li>
+            <li>1 points pour la cohérence / format de nommage des classes ou id (voir format <a
+                    href="https://developer.mozilla.org/fr/docs/Glossary/Camel_case">Camel Case</a>)</li>
+            <li>1 point si toutes les classes, ids et commentaires sont en anglais</li>
+            <li>2 points pour la lisibilité / simplicité du code</li>
+        </ul>
+
+        <p>N'hésitez pas à utiliser toutes les ressources à votre disposition (<a
+                href="https://www.google.com/">Google</a>,
+            <a href="https://developer.mozilla.org/fr/">Mozilla Developer Network</a>, etc.).
+            <br> <b>ATTENTION !</b> faites ces exercices par vous-même! ne vous faites pas aider par vos camarades via
+            slack.
+        </p>
+    </div>
+
+
+    <h2>Exercices</h2>
+    <div>
+        <h3>Alignement horizontal</h3>
+
+        <div id="HorizontalAlignment">
+            <div class="Box" id="Green">d4d4aa</div>
+            <div class="Box" id="LightOrange">edb458</div>
+            <div class="Box" id="Orange">e8871e</div>
+        </div>
+    </div>
+
+    <div>
+        <h3>Tableau</h3>
+
+        <table>
+
+            <caption>
+                Cours EMISA 2024
+            </caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Intervenant</th>
+                    <th scope="col">Module</th>
+                    <th scope="col">Jours</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Arnaud</th>
+                    <td>UI / UX Design</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Xan</th>
+                    <td>Frontend Dev</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Charles</th>
+                    <td>PHP / Symphony</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Louis</th>
+                    <td>Python / Django</td>
+                    <td>10</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">Total</th>
+                    <td>65</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+
+    <div>
+        <h3>Formulaire</h3>
+
+        <form>
+            <div class="field">
+                <label for="name">Nom</label> <br>
+                <input type="text" id="name" name="UserName" />
+            </div>
+
+            <div class="field">
+                <label for="mail">Email</label> <br>
+                <input type="text" id="mail" name="UserEmail" required />
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label> <br>
+                <textarea name="UserMessage" id="message"></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Quel est votre légume préféré ?</legend>
+
+                <div class="choice">
+                    <input type="radio" id="carrot" name="choice" value="carrot" />
+                    <label for="carrot">Carottes</label>
+                </div>
+
+                <div class="choice">
+
+                    <input type="radio" id="peas" name="choice" value="peas" checked />
+                    <label for="peas">Petits pois</label>
+                </div>
+
+                <div class="choice">
+                    <input type="radio" id="cabbage" name="choice" value="cabbage" />
+                    <label for="cabbage">Choux</label>
+                </div>
+
+            </fieldset>
+
+            <button id="Validate">Valider</button>
+
+        </form>
+    </div>
+
+
+    <h3>Lignes et colonnes</h3>
+    <div id="RowsAndColumns">
+
+        <div class="BoxGrid" id="Pink">ff9fb2</div>
+        <div class="BoxGrid" id="LightPink">fbdce2</div>
+        <div class="BoxGrid" id="Blue">0acdff</div>
+        <div class="BoxGrid" id="DarkGreen">60ab9a</div>
+    </div>
+
+
+
+    <h3>Retour en haut de page</h3>
+    <div class="anchor">
+        <span>Un clique sur la flèche devrait vous rediriger vers le titre.</span>
+
+        <a href="#top">
+            <img id="arrow" src="./assets/arrow-up.webp" alt="this is an arrow to the top">
+        </a>
+    </div>
+
+</body>
+</html>
