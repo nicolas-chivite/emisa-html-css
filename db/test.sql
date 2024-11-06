@@ -1,4 +1,4 @@
--- Création table students avec insertions des valeurs
+/* Création table students avec insertions des valeurs */
 CREATE TABLE students
 (
   students_id INT PRIMARY KEY NOT NULL,
@@ -13,14 +13,14 @@ INSERT INTO students (students_id, firstname, lastname, birth_date)
     (2, 'Petit', 'Emile', '1875-10-25'),
     (3, 'Monique', 'Olivier', '2014-01-01'),
     (4, 'Xavier', 'Dupont de Lignonnes', '2012-12-12');
-SELECT * FROM students; -- affichage de la table
+SELECT * FROM students; /* affichage de la table */
 
--- Suppression de données dans la table students
+/* Suppression de données dans la table students */
 DELETE FROM students
 WHERE firstname = 'Petit';
 SELECT * FROM students;
 
--- Création table message avec la FK pour appeler données de la table students
+/* Création table message avec la FK pour appeler données de la table students */
 CREATE TABLE message
 (
   message_id INT PRIMARY KEY NOT NULL,
@@ -36,9 +36,15 @@ INSERT INTO message (message_id, content, creation_date, author)
     (2, 'Proin id sodales tellus. In pharetra ipsum id arcu bibendum iaculis.', '2000-12-12', 4);
 SELECT * FROM message;
 
--- Jointure des 2 tableaux pour afficher l'identité des auteurs des messages
+/* Join des 2 tableaux pour afficher l'identité des auteurs des messages */
 SELECT firstname, lastname, content
 FROM students 
 INNER JOIN message ON students.students_id = message.author;
 
--- Transaction 
+/* Transaction ajout 1 lignes dans students et suppression message*/
+BEGIN TRANSACTION;
+INSERT INTO students (students_id, firstname, lastname, birth_date)
+ 	VALUES (5, 'Le Petit', 'Alexandre', '1999-05-08');
+DELETE FROM message WHERE message_id = 2;
+SELECT * FROM students, message;
+COMMIT 
