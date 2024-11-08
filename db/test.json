@@ -1,0 +1,7 @@
+db.getcollection.('students').insertMany([
+    {'firstname': 'Jean', 'age': 24, 'courses': 'DEV', 'year_graduation' : 2020},
+    {'firstname': 'Monique', 'age': 70, 'courses': 'PAIE', 'year_graduation' : 1850},
+    {'firstname': 'Nico', 'age': 34, 'courses': 'DEV', 'year_graduation' : 2024},
+    {'firstname': 'Iban', 'age': 18, 'courses': 'PROJET WEB', 'year_graduation' : 2026}
+]);
+
