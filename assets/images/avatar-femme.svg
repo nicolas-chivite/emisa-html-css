@@ -1,24 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="163" height="167" viewBox="0 0 163 167">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 163 167">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
   <defs>
-    <filter id="Vue-densemble-de-la-facade-est-du-bloc-public-depuis-JE-scaled-e1713796537948" x="0" y="0" width="163" height="167" filterUnits="userSpaceOnUse">
-      <feOffset dx="2" dy="8" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_285" data-name="Rectangle 285" width="94.823" height="124.681" fill="#1c9cda"/>
-    </clipPath>
+    <style>
+      .st0, .st1 {
+        fill: #1c9cda;
+      }
+
+      .st1 {
+        opacity: .3;
+      }
+    </style>
   </defs>
-  <g id="avatar-femme" transform="translate(-271 -913)">
-    <g transform="matrix(1, 0, 0, 1, 271, 913)" filter="url(#Vue-densemble-de-la-facade-est-du-bloc-public-depuis-JE-scaled-e1713796537948)">
-      <path id="Vue-densemble-de-la-facade-est-du-bloc-public-depuis-JE-scaled-e1713796537948-2" data-name="Vue-densemble-de-la-facade-est-du-bloc-public-depuis-JE-scaled-e1713796537948" d="M24,0H145a0,0,0,0,1,0,0V149a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V24A24,24,0,0,1,24,0Z" transform="translate(7 1)" fill="rgba(28,156,218,0.2)"/>
-    </g>
-    <g id="Groupe_228" data-name="Groupe 228" transform="translate(303 937.318)" opacity="0.474">
-      <g id="Groupe_216" data-name="Groupe 216" clip-path="url(#clip-path)">
-        <path id="Tracé_60" data-name="Tracé 60" d="M94.823,103.759V124.68H0V103.759A14.2,14.2,0,0,1,11.023,89.915l8.511-1.967C.285,88.066,2.372,73.487,2.372,73.487c9.481,0,11.853-9.482,11.853-28.446V33.189a33.187,33.187,0,1,1,66.374,0V45.041c0,18.964,2.371,28.446,11.852,28.446,0,0,2.087,14.579-17.161,14.461L83.8,89.915a14.2,14.2,0,0,1,11.023,13.844" fill="#1c9cda"/>
-      </g>
-    </g>
-  </g>
+  <path id="Vue-densemble-de-la-facade-est-du-bloc-public-depuis-JE-scaled-e1713796537948-2" class="st1" d="M27,0h136v167H0V26.9C0,12,12.1,0,27,0Z"/>
+  <path id="Tracé_60" class="st0" d="M135.8,143v24H27.2v-24c0-7.6,5.2-14.2,12.6-15.9l9.8-2.3c-22.1.1-19.7-16.6-19.7-16.6,10.9,0,13.6-10.9,13.6-32.6v-13.6c0-21,17-38,38-38s38,17,38,38v13.6c0,21.7,2.7,32.6,13.6,32.6,0,0,2.4,16.7-19.7,16.6l9.8,2.3c7.4,1.7,12.6,8.3,12.6,15.9"/>
 </svg>
