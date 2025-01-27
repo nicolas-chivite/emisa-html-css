@@ -1,0 +1,25 @@
+{
+  "name": "emisa-html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas-chivite/emisa-html-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolas-chivite/emisa-html-css/issues"
+  },
+  "homepage": "https://github.com/nicolas-chivite/emisa-html-css#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "path": "^0.12.7"
+  }
+}
