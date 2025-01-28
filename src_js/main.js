@@ -50,4 +50,20 @@ window.onload = (event) => {
         para.textContent = "";
     }
   }
+
+  const submit = document.getElementById("submit");
+
+  const addStudent = () => {
+    const name = document.getElementById("studentName");
+    const age = document.getElementById("studentAge");
+    let tbody = document.getElementById("studentTable");
+
+    tbody.innerHTML += 
+    `<tr>
+      <th>${name.value}</th>
+      <th>${age.value}</th>
+    </tr>`;
+
+  };
+  submit.addEventListener("click", addStudent);
 };
