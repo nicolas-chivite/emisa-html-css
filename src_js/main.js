@@ -1,4 +1,5 @@
-window.onload = (event) => {
+window.onload = async (event) => {
+
   console.log("page is fully loaded");
 
   let myName = "Nico";
@@ -51,19 +52,67 @@ window.onload = (event) => {
     }
   }
 
-  const submit = document.getElementById("submit");
+// AJOUT ETUDIANTS DANS TABLEAU VIA INPUT
 
-  const addStudent = () => {
-    const name = document.getElementById("studentName");
-    const age = document.getElementById("studentAge");
-    let tbody = document.getElementById("studentTable");
+  // const submit = document.getElementById("submit");
 
-    tbody.innerHTML += 
-    `<tr>
-      <th>${name.value}</th>
-      <th>${age.value}</th>
-    </tr>`;
+  // const addStudent = () => {
+  //   const name = document.getElementById("studentName");
+  //   const age = document.getElementById("studentAge");
+  //   let tbody = document.getElementById("studentTable");
 
-  };
-  submit.addEventListener("click", addStudent);
+  //   tbody.innerHTML += 
+  //   `<tr>
+  //     <th>${name.value}</th>
+  //     <th>${age.value}</th>
+  //   </tr>`;
+
+  // };
+  // submit.addEventListener("click", addStudent);
+
+
+// CONNEXION API POUR REMPLIR TABLEAU DES ETUDIANTS
+
+  // Récupération objet du fetch
+  const data = await getStudent();
+    console.log(data);
+  //Récupération des données de l'objet
+  const studentData = data["hydra:member"];
+    console.log(studentData);
+
+  studentTable(studentData);
+
 };
+
+const studentTable = (studentData) => {
+  for (student of studentData) {
+    console.log(student);
+    const tableau = document.querySelector("tbody");
+    tableau.innerHTML += 
+    `<tr>
+      <th>${student.id}</th>
+      <th>${student.firstName}</th>
+      <th>${student.lastName}</th>
+      <th>${student.promo}</th>
+      <th>${student.course.title}</th>
+    </tr>`;
+  }
+}
+
+
+async function getStudent() {
+  try {
+    const url = "https://annuaire-emisa.redbox.fr/api/students";
+
+    const response =  await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status} `);
+    }
+
+    const json = await response.json();
+    return json;
+
+  } catch (error) {
+    console.error(error.message);
+  }
+}

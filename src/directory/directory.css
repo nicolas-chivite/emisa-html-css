@@ -84,11 +84,7 @@ h1 {
 }
 
 .search {
-    display: flex;
-    flex-direction: column;
-    max-width: 70%;
-    align-items: normal;
-    margin: 2% auto;
+    margin: auto 15%;
 
     & h2 {
     color: #025194;
@@ -127,14 +123,16 @@ h1 {
         margin: auto 1.5rem;
     }
 }
+.container {
+    display: flex;
+    flex-direction: column;
+}
 
 .student {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
-    max-width: 70%;
-    margin: 2% auto;
+    grid-template-columns: auto auto;
+    grid-gap: 45px;
+    margin: 5% auto;
 }
 
 .stud-sheet{
@@ -196,7 +194,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     max-width: 20%;
-    margin: 0 auto;
+    margin: 2% auto;
 
     /* & img {
         background-color: #474747;
@@ -225,7 +223,6 @@ footer {
     display: flex;
     justify-content: start;
     height: 58px;
-    margin-top: 7%;
 }
 
 #logo-footer {
