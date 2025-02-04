@@ -12,16 +12,32 @@ window.onload = async (event) => {
 };
 
 const studentTable = (studentData) => {
-  for (student of studentData) {
+  for (const student of studentData) {
     console.log(student);
-    const tableau = document.querySelector("tbody");
-    tableau.innerHTML += `<tr>
-        <th>${student.id}</th>
-        <th>${student.firstName}</th>
-        <th>${student.lastName}</th>
-        <th>${student.promo}</th>
-        <th>${student.course.title}</th>
-      </tr>`;
+    const studentList = document.querySelector(".student");
+    studentList.innerHTML +=
+    `
+     <div class="stud-sheet">
+    
+            <img class="stud-pic" src="../../assets/images/avatar-femme.svg" alt="student picture">
+
+            <div class="stud-card">
+
+                <div class="id">
+                    <span id="stud-id">${student.firstName} ${student.lastName}</span>
+                    <p>Date de naissance : ${student.birthDay}</p>
+                    <p class="year-type">Formation : ${student.course.title}</p>
+                    <img src="../../assets/images/picto-promo.svg" alt="student hat"> <span class="year-type"> Promo ${student.promo}</span>
+                </div>
+    
+                <img src="../../assets/images/coeur-vide.svg" alt="student selection" class="heart">
+     
+                <div class="btn-stud">
+                    <button>Voir la fiche<a href="../student.html"></a></button>
+                </div>
+            </div>
+        </div>      
+    `
   }
 };
 
