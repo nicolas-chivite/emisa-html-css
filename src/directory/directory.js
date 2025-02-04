@@ -15,6 +15,8 @@ const studentTable = (studentData) => {
   for (const student of studentData) {
     console.log(student);
     const studentList = document.querySelector(".student");
+    const birthDay = new Date(student.birthDay);
+    const formattedDate = birthDay.toLocaleDateString("fr-FR");
     studentList.innerHTML +=
     `
      <div class="stud-sheet">
@@ -25,7 +27,7 @@ const studentTable = (studentData) => {
 
                 <div class="id">
                     <span id="stud-id">${student.firstName} ${student.lastName}</span>
-                    <p>Date de naissance : ${student.birthDay}</p>
+                    <p>Date de naissance : ${formattedDate}</p>
                     <p class="year-type">Formation : ${student.course.title}</p>
                     <img src="../../assets/images/picto-promo.svg" alt="student hat"> <span class="year-type"> Promo ${student.promo}</span>
                 </div>
