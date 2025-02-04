@@ -79,8 +79,16 @@ h1 {
 }
 /* FIN CSS DE LA BANNIERE */
 
+ .img_container {
+    display: flex;
+    width: 146px;
+    height: 150px;
+ }
+
 .stud-pic{
     position: relative;
+    border-top-left-radius: 1rem;
+    width: 100%;
 }
 
 .search {

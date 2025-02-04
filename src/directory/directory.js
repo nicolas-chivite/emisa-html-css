@@ -5,7 +5,7 @@ window.onload = async (event) => {
   const data = await getStudent();
   console.log(data);
   //Récupération des données de l'objet
-  const studentData = data["hydra:member"];
+  const studentData = data["member"];
   console.log(studentData);
 
   studentTable(studentData);
@@ -13,7 +13,7 @@ window.onload = async (event) => {
 
 const studentTable = (studentData) => {
   for (const student of studentData) {
-    console.log(student);
+    // console.log(student);
     const studentList = document.querySelector(".student");
     const birthDay = new Date(student.birthDay);
     const formattedDate = birthDay.toLocaleDateString("fr-FR");
@@ -21,7 +21,7 @@ const studentTable = (studentData) => {
     `
      <div class="stud-sheet">
     
-            <img class="stud-pic" src="../../assets/images/avatar-femme.svg" alt="student picture">
+            <div class="img_container"><img class="stud-pic" src="../../assets/photos/${student.photo}" alt="student picture"></div>
 
             <div class="stud-card">
 
@@ -35,7 +35,7 @@ const studentTable = (studentData) => {
                 <img src="../../assets/images/coeur-vide.svg" alt="student selection" class="heart">
      
                 <div class="btn-stud">
-                    <button>Voir la fiche<a href="../student.html"></a></button>
+                    <a href="../student/student.html"><button>Voir la fiche</button></a>
                 </div>
             </div>
         </div>      
@@ -45,7 +45,7 @@ const studentTable = (studentData) => {
 
 async function getStudent() {
   try {
-    const url = "https://annuaire-emisa.redbox.fr/api/students";
+    const url = "http://127.0.0.1:8000/api/students";
 
     const response = await fetch(url);
     if (!response.ok) {
@@ -53,6 +53,7 @@ async function getStudent() {
     }
 
     const json = await response.json();
+    console.log(json);
     return json;
   } catch (error) {
     console.error(error.message);
