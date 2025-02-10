@@ -83,12 +83,15 @@ h1 {
     display: flex;
     width: 146px;
     height: 150px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
  }
 
 .stud-pic{
-    position: relative;
     border-top-left-radius: 1rem;
-    width: 100%;
+    position: relative;
+
 }
 
 .search {
