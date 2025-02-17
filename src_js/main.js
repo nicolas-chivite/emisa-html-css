@@ -1,118 +1,49 @@
 window.onload = async (event) => {
+  fetch("heroes.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Erreur HTTP : ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((json) => {
+      heroes(json);
+      heroesHeader(json);
+    })
+    .catch((err) => console.error(`Fetch problem: ${err.message}`));
 
-  console.log("page is fully loaded");
+  const heroesHeader = (json) => {
+    const title = document.querySelector("header");
+    const textTitle = document.createElement("h1");
+    textTitle.textContent = json.squadName;
+    title.appendChild(textTitle);
 
-  let myName = "Nico";
-  let myAge = 35;
-
-  const button = document.querySelector("button");
-
-  button.onclick = function () {
-    let name = prompt("Quel est votre nom ?");
-    alert("Salut " + name + ", sympa de vous voir !");
+    const subTitle = document.createElement("p");
+    subTitle.textContent =
+      "Hometown: " + json.homeTown + " // Formed: " + json.formed;
+    title.appendChild(subTitle);
   };
 
-  const select = document.querySelector("select");
-  const para = document.querySelector("p");
-  const html = document.querySelector("body");
-
-  select.addEventListener("change", setWeather);
-
-  function update(bgColor, textColor) {
-    html.style.backgroundColor = bgColor;
-    html.style.color = textColor;
-  }
-
-  function setWeather() {
-    const choice = select.value;
-
-    switch (choice) {
-      case "sunny":
-        para.textContent =
-          "It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.";
-          update("yellow", "black")
-        break;
-      case "rainy":
-        para.textContent =
-          "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long.";
-          update("blue", "white")
-        break;
-      case "snowing":
-        para.textContent =
-          "The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.";
-          update("white", "black")
-        break;
-      case "overcast":
-        para.textContent =
-          "It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.";
-          update("gray", "white")
-        break;
-      default:
-        para.textContent = "";
+  const heroes = (json) => {
+    const heroesList = json["members"];
+    const heroesTable = document.querySelector("tbody");
+    for (const hero of heroesList) {
+      heroesTable.appendChild(createRow(hero));
     }
-  }
+  };
 
-// AJOUT ETUDIANTS DANS TABLEAU VIA INPUT
+  const createCol = (heroes) => {
+    const col = document.createElement("td");
+    col.textContent = heroes;
+    return col;
+  };
 
-  // const submit = document.getElementById("submit");
-
-  // const addStudent = () => {
-  //   const name = document.getElementById("studentName");
-  //   const age = document.getElementById("studentAge");
-  //   let tbody = document.getElementById("studentTable");
-
-  //   tbody.innerHTML += 
-  //   `<tr>
-  //     <th>${name.value}</th>
-  //     <th>${age.value}</th>
-  //   </tr>`;
-
-  // };
-  // submit.addEventListener("click", addStudent);
-
-
-// CONNEXION API POUR REMPLIR TABLEAU DES ETUDIANTS
-
-  // Récupération objet du fetch
-  const data = await getStudent();
-    console.log(data);
-  //Récupération des données de l'objet
-  const studentData = data["hydra:member"];
-    console.log(studentData);
-
-  studentTable(studentData);
-
+  const createRow = (hero) => {
+    const row = document.createElement("tr");
+    row.appendChild(createCol(hero.name));
+    row.appendChild(createCol(hero.age));
+    row.appendChild(createCol(hero.secretIdentity));
+    row.appendChild(createCol(hero.powers));
+    return row;
+  };
 };
-
-const studentTable = (studentData) => {
-  for (student of studentData) {
-    console.log(student);
-    const tableau = document.querySelector("tbody");
-    tableau.innerHTML += 
-    `<tr>
-      <th>${student.id}</th>
-      <th>${student.firstName}</th>
-      <th>${student.lastName}</th>
-      <th>${student.promo}</th>
-      <th>${student.course.title}</th>
-    </tr>`;
-  }
-}
-
-
-async function getStudent() {
-  try {
-    const url = "https://annuaire-emisa.redbox.fr/api/students";
-
-    const response =  await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status} `);
-    }
-
-    const json = await response.json();
-    return json;
-
-  } catch (error) {
-    console.error(error.message);
-  }
-}
