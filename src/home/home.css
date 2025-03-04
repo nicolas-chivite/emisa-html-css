@@ -107,7 +107,7 @@ span.underline:hover {
 
 /* BANNIERE */
 .banner {
-    background-image: url(/assets/images/bandeau-home.png);
+    background-image: url(../..//assets/images/bandeau-home.png);
     background-position: 25% top;
     overflow: hidden;
     width: 100vw;

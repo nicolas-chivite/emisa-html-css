@@ -17,11 +17,14 @@ const studentTable = (studentData) => {
     const studentList = document.querySelector(".student");
     const birthDay = new Date(student.birthDay);
     const formattedDate = birthDay.toLocaleDateString("fr-FR");
-    studentList.innerHTML +=
-    `
+    let studentPic = student.photo ;
+    if (!studentPic) {
+      studentPic = "avatar-homme.svg";
+    }
+    studentList.innerHTML += `
      <div class="stud-sheet">
     
-            <div class="img_container"><img class="stud-pic" src="../../assets/photos/${student.photo}" alt="student picture"></div>
+            <div class="img_container"><img class="stud-pic" src="../../assets/photos/${studentPic}" alt="student picture"></div>
 
             <div class="stud-card">
 
@@ -39,7 +42,7 @@ const studentTable = (studentData) => {
                 </div>
             </div>
         </div>      
-    `
+    `;
   }
 };
 
