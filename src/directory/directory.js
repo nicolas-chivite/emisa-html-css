@@ -7,7 +7,6 @@ window.onload = async (event) => {
   //Récupération des données de l'objet
   const studentData = data["member"];
   console.log(studentData);
-
   studentTable(studentData);
 };
 

@@ -99,9 +99,9 @@ span.underline:hover {
 .network {
     margin: 0% auto;
     padding: 0.5rem;
-    
+
     & img {
-    margin: 0.3rem;
+        margin: 0.3rem;
     }
 }
 
